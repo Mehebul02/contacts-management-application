@@ -6,7 +6,11 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
+    extend: { fontFamily: {
+      poppins:'"Poppins", sans-serif',
+      montserrat:'"Montserrat", sans-serif'
+
+    },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -14,5 +18,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui"), ],
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
+  },
 };
