@@ -7,7 +7,7 @@ const Navbar = () => {
   const navItems = [
     {
       title: "Add Contact",
-      path: "/add_contact",
+      path: "/add-contact",
     },
     {
       title: "All Contact",
@@ -49,9 +49,9 @@ const Navbar = () => {
               </div>
             </ul>
           </div>
-          <h1 className="text-balance lg:text-2xl  font-montserrat font-bold ">
+          <Link href='/' className="text-balance lg:text-2xl  font-montserrat font-bold ">
             Contacts Management
-          </h1>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
